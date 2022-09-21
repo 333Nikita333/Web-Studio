@@ -46,7 +46,10 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 28px;
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px;
+    
 
     font-family: inherit;
     font-weight: 700;
