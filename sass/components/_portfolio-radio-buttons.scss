@@ -1,0 +1,37 @@
+.portfolio__list-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    gap: 8px;
+}
+.portfolio__button{
+    padding: 6px 22px;
+    min-width: 73px;
+    min-height: 38px;
+
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    border-radius: 4px;
+    border: transparent;
+    color: $secondary-text-color;
+    background-color: $secondary-background-color;
+
+    transition: background-color $time-duration $timing-function,
+                color $time-duration $timing-function,
+                box-shadow $time-duration $timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $primary-white-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                    0px 1px 2px rgba(0, 0, 0, 0.08), 
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}

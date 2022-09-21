@@ -1,0 +1,37 @@
+.services {
+    padding-top: 0;
+
+    &__title {
+        @extend %style-primary-title;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__item {
+        position: relative;
+    
+        width: calc((100% - 60px) / 3);
+    }
+    &__overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 370px;
+        min-height: 70px;
+    
+        background-color: $label-background-color;
+    }
+    &__name {
+        @extend %style-name-features_services;
+
+        margin: 0;
+    
+        color: $primary-white-color;
+    }
+}

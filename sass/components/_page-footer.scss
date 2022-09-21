@@ -1,0 +1,114 @@
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $footer-background-color;
+
+    &__content {
+        display: flex;
+        align-items: baseline;
+    }
+    &__contacts--withlogo {
+        margin-right: 93px;
+    }
+    &__logo {
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+    &__logo-colored{
+        color: $primary-white-color;
+    }
+    &__contacts {
+        font-style: normal;
+        line-height: 1.71;
+    }
+    &__contacts-location {
+        margin-top: 0;
+        margin-bottom: 9px;
+    
+        color: $primary-white-color
+    }
+    &__contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+}
+.footer__contacts-link {
+    transition: color $time-duration $timing-function;
+
+    color: $footer-adress-text-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.site-socials {
+    margin-right: 93px;
+
+    &__title {
+        @extend %style-footer-title;
+    }
+    &__list {
+        display: flex;
+        gap: 10px;
+    }
+}
+.site-socials__link {
+    @extend %style-social-link;
+    color: $primary-white-color;
+    background-color: $icons-background-color;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.form-subscribe {
+    display: flex;
+    align-items: flex-end;
+
+    &__title {
+        @extend %style-footer-title;
+    }
+    &__button {
+        @extend %style-button-size;
+    }
+    &__icon{
+        margin-left: 10px;
+    }
+}
+.form-subscribe__label {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+
+    &:focus-within .form-subscribe__field {
+        border: 1px solid $accent-color
+    }
+}
+.form-subscribe__field {
+    min-width: 358px;
+    padding: 15px 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: $primary-white-color;
+    background-color: $footer-background-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    transition: border $time-duration $timing-function;
+
+    &::placeholder {
+        color: $footer-adress-text-color;
+    }
+}

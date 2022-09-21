@@ -1,0 +1,41 @@
+.features {
+    &__title {
+        @extend %style-primary-title;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__item {
+        width: calc((100% - 90px) / 4);
+    }
+    &__wrapper-icon {
+        display: flex;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    
+        justify-content: center;
+        align-items: center;
+        background-color: $secondary-background-color;
+        border-radius: 4px;
+    }
+    &__name {
+        @extend %style-name-features_services ;
+
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        color: $secondary-text-color;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-top: 0;
+        margin-bottom: 0;
+    
+        line-height: 1.71;
+    }
+}

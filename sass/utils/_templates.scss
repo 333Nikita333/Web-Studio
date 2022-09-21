@@ -1,0 +1,84 @@
+%style-header-links {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    list-style: none;
+
+    transition: color $time-duration $timing-function;
+}
+%style-name-features_services {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+%style-primary-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    color: $secondary-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+%style-social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    transition: color $time-duration $timing-function, 
+                background-color $time-duration $timing-function;
+}
+%style-footer-title {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+}
+%style-button-size {
+    min-width: 200px;
+    min-height: 50px;
+}
+%style-modal-form__text {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+%style-modal-form__label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+%style-modal-form__field {
+    min-width: 448px;
+    min-height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border $time-duration $timing-function;
+}
+%style-modal-form__icon {
+    position: absolute;
+    top: 29px;
+    left: 12px;
+
+    color: $secondary-text-color;
+
+    transition: color $time-duration $timing-function;
+}
