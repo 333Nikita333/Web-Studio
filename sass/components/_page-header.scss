@@ -1,69 +1,117 @@
 
 .header {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
 
     border-bottom: 1px solid #ECECEC;
 
     &__logo {
-        padding-top: 24px;
-        padding-bottom: 25px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }
-.header__content {
+.nav {
     display: flex;
     align-items: center;
 }
 .header__logo-color {
     color: $logo-text-color;
 }
-.header__contacts-icon{
-    margin-right: 10px;
-} 
-.header__contacts-link{
-    @extend %style-header-links;
-    color: $primary-text-color;
-
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
-}
-.header__contacts-list {
+.button-menu {
     display: flex;
     margin-left: auto;
-    gap: 30px;
-}
-.nav {
-    display: flex;
-}
-.nav__list {
-    display: flex;
-    margin-left: 93px;
-    gap: 50px;
-}
-.nav__link{
-    @extend %style-header-links;
+    padding: 10px 0;
 
-    &:hover, 
-    &:focus{
+    color: $secondary-text-color;
+    border: none;
+    background: transparent;
+
+    transition: color $time-duration $timing-function;
+
+    & .icon {
+        transition: color $time-duration $timing-function;
+    }
+    &:hover .icon,
+    &:focus .icon {
         color: $accent-color;
     }
 }
-.nav__link--current{
-    position: relative;
-    color: $accent-color;
+.button-menu__icon-close {
+    display: none;
 
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-    
-        width: 100%;
-        height: 4px;
-    
-        background-color: $accent-color;
-        border-radius: 4px;
+    .button-menu--is-open & {
+        display: block;
     }
 }
+.button-menu__icon-menu{
+    .button-menu--is-open & {
+        display: none;
+    }
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+
+    text-align: center;
+    font-size: 20px;
+    background-color: blanchedalmond;
+
+    &--is-open {
+        display: block;
+    }
+}
+// .header__contacts-icon{
+//     margin-right: 10px;
+// } 
+// .header__contacts-link{
+//     @extend %style-header-links;
+//     color: $primary-text-color;
+
+//     &:hover,
+//     &:focus {
+//         color: $accent-color;
+//     }
+// }
+// .header__contacts-list {
+//     display: flex;
+//     margin-left: auto;
+//     gap: 30px;
+// }
+// .nav {
+//     display: flex;
+// }
+// .nav__list {
+//     display: flex;
+//     margin-left: 93px;
+//     gap: 50px;
+// }
+// .nav__link{
+//     @extend %style-header-links;
+
+//     &:hover, 
+//     &:focus{
+//         color: $accent-color;
+//     }
+// }
+// .nav__link--current{
+//     position: relative;
+//     color: $accent-color;
+
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         bottom: -2px;
+//         left: 0;
+    
+//         width: 100%;
+//         height: 4px;
+    
+//         background-color: $accent-color;
+//         border-radius: 4px;
+//     }
+// }
