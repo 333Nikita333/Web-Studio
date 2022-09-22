@@ -176,6 +176,31 @@
   display: block;
 }
 
+.main {
+  max-width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-main.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__content {
+  text-align: center;
+}
+.main__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .features__item + .features__item {
   margin-top: 30px;
 }
