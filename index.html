@@ -2,6 +2,7 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
@@ -27,10 +28,7 @@
       <!--Навігація сайту-->
       <div class="container">
         <nav class="nav">
-          <a
-            class="link logo header__logo"
-            href="./index.html"
-            rel="noopener nofollow noreferrer"
+          <a class="link logo header__logo" href="./index.html" rel="noopener nofollow noreferrer"
             >Web<span class="header__logo-color">Studio</span></a
           >
           <button
@@ -40,32 +38,72 @@
             aria-controls="mobile-menu"
             data-menu-button
           >
-            <svg
-              class="icon"
-              width="40px"
-              height="40px"
-              aria-label="Перемикач мобільного меню"
-            >
+            <svg class="icon" width="40px" height="40px" aria-label="Перемикач мобільного меню">
               <use
                 class="button-menu__icon-close"
                 href="./images/icons.svg#icon-mobile-close"
               ></use>
-              <use
-                class="button-menu__icon-menu"
-                href="./images/icons.svg#icon-mobile-menu"
-              ></use>
+              <use class="button-menu__icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
             </svg>
           </button>
-          <div
-            class="mobile-menu mobile-menu--is-open"
-            id="mobile-menu"
-            data-menu
-          >
-            Контент
-          </div>
+          <div class="mobile-menu mobile-menu--is-open" id="mobile-menu" data-menu>Контент</div>
         </nav>
       </div>
     </header>
+    <main>
+      <!--Особливості-->
+      <section class="section features">
+        <div class="container features__content">
+          <h2 class="features__title visually-hidden">Особливості</h2>
+          <ul class="list features__list">
+            <li class="item features__item">
+              <div class="features__wrapper-icon">
+                <svg class="icon features__icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#pic-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="features__name">Увага до деталей</h3>
+              <p class="features__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li class="item features__item">
+              <div class="features__wrapper-icon">
+                <svg class="icon features__icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#pic-clock"></use>
+                </svg>
+              </div>
+              <h3 class="features__name">Пунктуальність</h3>
+              <p class="features__text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li class="item features__item">
+              <div class="features__wrapper-icon">
+                <svg class="icon features__icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#pic-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="features__name">Планування</h3>
+              <p class="features__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="item features__item">
+              <div class="features__wrapper-icon">
+                <svg class="icon features__icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#pic-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="features__name">Сучасні технології</h3>
+              <p class="features__text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <!-- Скрипт для модального вікна -->
     <script defer src="js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
