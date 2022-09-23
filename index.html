@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,7 +31,7 @@
             >Web<span class="header__logo-color">Studio</span></a
           >
           <button
-            class="button-menu button-menu--is-open"
+            class="button-menu"
             type="button"
             aria-expanded="false"
             aria-controls="mobile-menu"
@@ -578,17 +577,99 @@
             <strong class="form-subscribe__title">Підпишіться на розсилку</strong>
             <input class="form-subscribe__field" type="email" name="email" placeholder="E-mail" />
           </label>
-          <button class="button button-subscribe form-subscribe__button" type="submit">
+          <button class="button form-subscribe__button" type="submit">
             Підписатися
-            <svg class="icon button-subscribe__icon" width="24px" height="24px">
+            <svg class="icon form-subscribe__icon" width="24px" height="24px">
               <use href="./images/icons.svg#icon-subscribe"></use>
             </svg>
           </button>
         </form>
       </div>
     </footer>
+    
+
+    <!-- Модальне вікно -->
+    <div class="backdrop backdrop--is-hidden" data-modal>
+      <div class="modal">
+        <form class="modal-form">
+          <strong class="modal-form__title">Залиште свої дані, ми вам передзвонимо</strong>
+          <label class="modal-form__label modal-form__label-name">
+            <span class="modal-form__text-name">Ім'я</span>
+            <input
+              class="modal-form__field modal-form__field-name"
+              type="text"
+              name="name"
+              placeholder=" "
+            />
+            <svg class="icon modal-form__icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="modal-form__label modal-form__label-tel">
+            <span class="modal-form__text-tel">Телефон</span>
+            <input
+              class="modal-form__field modal-form__field-tel"
+              type="tel"
+              name="tel"
+              placeholder=" "
+            />
+            <svg class="icon modal-form__icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="modal-form__label modal-form__label-email">
+            <span class="modal-form__text-email"><span lang="en">Email</span></span>
+            <input
+              class="modal-form__field modal-form__field-email"
+              type="email"
+              name="email"
+              placeholder=" "
+            />
+            <svg class="icon modal-form__icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="modal-form__label modal-form__label-comment">
+            <span class="modal-form__text-comment">Коментар</span>
+            <textarea
+              class="modal-form__field modal-form__field-comment"
+              name="feedback"
+              rows="5"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <label class="modal-form__label modal-form__label-checkbox">
+            <input
+              class="modal-form__field modal-form__field-checkbox"
+              type="checkbox"
+              name="checkbox_terms"
+            />
+            <svg class="icon modal-form__icon--mark" width="16px" height="15px">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <span class="modal-form__text-checkbox"
+              >Погоджуюся з розсилкою та приймаю
+              <a
+                class="link modal-form__link-terms"
+                href=""
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >Умови договору</a
+              >
+            </span>
+          </label>
+          <button class="button modal-form__button" type="submit">Відправити</button>
+        </form>
+        <button class="modal__button-close" type="button" data-modal-close>
+          <svg class="icon modal__icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <!-- Скрипт для модального вікна -->
+    <script src="./js/modal.js"></script>
+    <!-- Скрипт для вікна навігації з телефону -->
     <script defer src="js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

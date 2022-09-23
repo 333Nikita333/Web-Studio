@@ -2,8 +2,8 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Webstudio</title>
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,60 +25,28 @@
   <body class="body-site">
     <header class="header">
       <!--Навігація сайту-->
-      <div class="container header__content">
+      <div class="container">
         <nav class="nav">
           <a class="link logo header__logo" href="./index.html" rel="noopener nofollow noreferrer"
             >Web<span class="header__logo-color">Studio</span></a
           >
-          <ul class="list nav__list">
-            <li class="item nav__item">
-              <a
-                class="link nav__link"
-                href="./index.html"
-                rel="noopener nofollow noreferrer"
-                >Студіо</a
-              >
-            </li>
-            <li class="item nav__item">
-              <a class="link nav__link nav__link--current" href="./portfolio.html" rel="noopener nofollow noreferrer"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="item nav__item">
-              <a class="link nav__link" href="./index.html" rel="noopener nofollow noreferrer"
-                >Контакти</a
-              >
-            </li>
-          </ul>
+          <button
+            class="button-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg class="icon" width="40px" height="40px" aria-label="Перемикач мобільного меню">
+              <use
+                class="button-menu__icon-close"
+                href="./images/icons.svg#icon-mobile-close"
+              ></use>
+              <use class="button-menu__icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu" id="mobile-menu" data-menu>Контент</div>
         </nav>
-        <ul class="list header__contacts-list">
-          <li class="item header__contacts-item">
-            <a
-              class="link header__contacts-link"
-              href="mailto:info@devstudio.com"
-              target="_blank"
-              rel="noopener nofollow noreferrer"
-            >
-              <svg class="icon header__contacts-icon" width="16" height="12px">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item header__contacts-item">
-            <a
-              class="link header__contacts-link"
-              href="tel:+380961111111"
-              target="_blank"
-              rel="noopener nofollow noreferrer"
-            >
-              <svg class="icon header__contacts-icon" width="12px" height="18px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -109,13 +77,7 @@
             <li class="item projects-grid__item">
               <a class="link project-link" href="">
                 <div class="project-link__label">
-                  <img
-                    class="img"
-                    src="./images/portfolio-one.jpg"
-                    alt="notebook"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="img" src="./images/portfolio-one.jpg" alt="notebook" />
                   <div class="project-link__overlay">
                     <p class="project-link__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -133,13 +95,7 @@
             <li class="item projects-grid__item">
               <a class="link project-link" href="">
                 <div class="project-link__label">
-                  <img
-                    class="img"
-                    src="./images/portfolio-two.jpg"
-                    alt="two people"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="img" src="./images/portfolio-two.jpg" alt="two people" />
                   <div class="project-link__overlay">
                     <p class="project-link__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -159,13 +115,7 @@
             <li class="item projects-grid__item">
               <a class="link project-link" href="">
                 <div class="project-link__label">
-                  <img
-                    class="img"
-                    src="./images/portfolio-three.jpg"
-                    alt="logo seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="img" src="./images/portfolio-three.jpg" alt="logo seafood" />
                   <div class="project-link__overlay">
                     <p class="project-link__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -183,13 +133,7 @@
             <li class="item projects-grid__item">
               <a class="link project-link" href="">
                 <div class="project-link__label">
-                  <img
-                    class="img"
-                    src="./images/portfolio-four.jpg"
-                    alt="headphone"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="img" src="./images/portfolio-four.jpg" alt="headphone" />
                   <div class="project-link__overlay">
                     <p class="project-link__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -207,13 +151,7 @@
             <li class="item projects-grid__item">
               <a class="link project-link" href="">
                 <div class="project-link__label">
-                  <img
-                    class="img"
-                    src="./images/portfolio-five.jpg"
-                    alt="two boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="img" src="./images/portfolio-five.jpg" alt="two boxes" />
                   <div class="project-link__overlay">
                     <p class="project-link__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -231,13 +169,7 @@
             <li class="item projects-grid__item">
               <a class="link project-link" href="">
                 <div class="project-link__label">
-                  <img
-                    class="img"
-                    src="./images/portfolio-six.jpg"
-                    alt="pc monitor"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="img" src="./images/portfolio-six.jpg" alt="pc monitor" />
                   <div class="project-link__overlay">
                     <p class="project-link__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -255,13 +187,7 @@
             <li class="item projects-grid__item">
               <a class="link project-link" href="">
                 <div class="project-link__label">
-                  <img
-                    class="img"
-                    src="./images/portfolio-seven.jpg"
-                    alt="book"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="img" src="./images/portfolio-seven.jpg" alt="book" />
                   <div class="project-link__overlay">
                     <p class="project-link__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -281,13 +207,7 @@
             <li class="item projects-grid__item">
               <a class="link project-link" href="">
                 <div class="project-link__label">
-                  <img
-                    class="img"
-                    src="./images/portfolio-eight.jpg"
-                    alt="lab tag"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="img" src="./images/portfolio-eight.jpg" alt="lab tag" />
                   <div class="project-link__overlay">
                     <p class="project-link__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -305,13 +225,7 @@
             <li class="item projects-grid__item">
               <a class="link project-link" href="">
                 <div class="project-link__label">
-                  <img
-                    class="img"
-                    src="./images/portfolio-nine.jpg"
-                    alt="notebook"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="img" src="./images/portfolio-nine.jpg" alt="notebook" />
                   <div class="project-link__overlay">
                     <p class="project-link__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -428,5 +342,7 @@
         </form>
       </div>
     </footer>
+    <!-- Скрипт для вікна навігації з телефону -->
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
