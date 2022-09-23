@@ -8,14 +8,17 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+
+    }
+    &__item {
+        width: calc((100% - 30px)/2);
     }
 }
 .clients__link {
     display: flex;
-    width: 210px;
-    height: 92px;
     align-items: center;
     justify-content: center;
+    padding: 16px 52px;
 
     color: $icons-other-color;
     border: 1px solid $icons-other-color;
