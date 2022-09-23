@@ -266,8 +266,12 @@
 }
 
 .services {
-  display: none;
   padding-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .services {
+    display: none;
+  }
 }
 .services__list {
   display: -webkit-box;
