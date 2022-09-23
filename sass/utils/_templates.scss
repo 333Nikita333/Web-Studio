@@ -18,20 +18,19 @@
 }
 %style-primary-title {
     margin-top: 0;
-    margin-bottom: 50px;
 
     color: $secondary-text-color;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
 }
 %style-social-link {
     display: flex;
-    width: 44px;
-    height: 44px;
     align-items: center;
     justify-content: center;
+    width: 44px;
+    height: 44px;
 
     border-radius: 50%;
 

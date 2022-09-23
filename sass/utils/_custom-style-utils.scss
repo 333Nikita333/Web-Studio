@@ -19,8 +19,11 @@
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
-    max-width: 480px;
     padding: 0 15px;
+
+    @media screen and (min-width: $mobile) {
+        width: 480px;
+    }
 }
 .link {
     color: $secondary-text-color;

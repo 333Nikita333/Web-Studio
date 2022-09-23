@@ -1,0 +1,33 @@
+.clients {
+    &__title {
+        @extend %style-primary-title;
+
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+.clients__link {
+    display: flex;
+    width: 210px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+
+    color: $icons-other-color;
+    border: 1px solid $icons-other-color;
+    border-radius: 4px;
+
+    transition: color $time-duration $timing-function,
+                border $time-duration $timing-function;
+            
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        border: 1px solid $accent-color;
+    }
+
+}
