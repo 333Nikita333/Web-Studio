@@ -23,6 +23,8 @@
 }    
 .project-link__overlay{
     position: absolute;
+    display: inline-flex;
+    align-items: center;
     height: 100%;
     padding: 64px 24px;
     
@@ -35,9 +37,7 @@
     }
 }
 .project-link__description {
-    display: inline-flex;
     margin: 0;
-    align-items: center;
     
     font-size: 18px;
     line-height: 1.56;
