@@ -130,23 +130,20 @@
     }
 }
 .mobile-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    width: 100%;
-    min-height: 796px;
-    padding: 48px 40px;
-
     background-color: $primary-white-color;
 
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 796px;
+        padding: 48px 40px;
+    }
     &--is-open {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    @media screen and (min-width: 768px) {
-        position: static;
     }
 }

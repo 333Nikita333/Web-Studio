@@ -331,14 +331,18 @@
 }
 
 .mobile-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 100%;
-  min-height: 796px;
-  padding: 48px 40px;
   background-color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 796px;
+    padding: 48px 40px;
+  }
 }
 .mobile-menu--is-open {
   display: -webkit-box;
@@ -351,11 +355,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    position: static;
-  }
 }
 
 .main {
@@ -687,6 +686,9 @@
 }
 
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   overflow: hidden;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
