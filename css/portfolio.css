@@ -29,6 +29,16 @@
     width: 480px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .link {
   color: #212121;
@@ -94,6 +104,14 @@
   overflow: hidden;
 }
 
+.nav__link, .header__social-link, .header__contacts-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  list-style: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .site-socials__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,14 +140,80 @@
 }
 
 .header {
-  position: relative;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #ECECEC;
 }
-.header__logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
+@media screen and (max-width: 767px) {
+  .header__content {
+    position: relative;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+.header__logo-color {
+  color: #000000;
+}
+.header__contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 32px;
+}
+.header__contacts-link {
+  font-size: 24px;
+  line-height: 1.17;
+  color: #757575;
+}
+.header__contacts-link:hover, .header__contacts-link:focus {
+  color: #2196F3;
+  font-size: 34px;
+  line-height: 1.18;
+}
+.header__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+.header__social-list .item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.header__social-link {
+  font-size: 18px;
+  line-height: 1.23;
+  color: #757575;
+}
+.header__social-link:hover, .header__social-link:focus {
+  color: #2196F3;
+}
+@media screen and (max-width: 767px) {
+  .header__contacts-icon {
+    display: none;
+  }
 }
 
 .nav {
@@ -140,12 +224,26 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
-.header__logo-color {
-  color: #000000;
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.nav__link {
+  font-size: 40px;
+  line-height: 1.18;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #2196F3;
 }
 
 .button-menu {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,6 +262,11 @@
 .button-menu:hover .icon, .button-menu:focus .icon {
   color: #2196F3;
 }
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
 
 .button-menu__icon-close {
   display: none;
@@ -177,18 +280,31 @@
 }
 
 .mobile-menu {
-  display: none;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
+  display: none;
   width: 100%;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  background-color: blanchedalmond;
+  min-height: 796px;
+  padding: 48px 40px;
+  background-color: #ffffff;
 }
 .mobile-menu--is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    position: static;
+  }
 }
 
 .portfolio__list-buttons {
@@ -278,11 +394,7 @@
 }
 
 .project-link__exposition {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  text-align: center;
+  padding: 20px 24px;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;

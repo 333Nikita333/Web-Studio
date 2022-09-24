@@ -24,6 +24,12 @@
     @media screen and (min-width: $mobile) {
         width: 480px;
     }
+    @media screen and (min-width: $tablet) {
+        width: 768px;
+    }
+    @media screen and (min-width: $desctop) {
+        width: 1200px;
+    }
 }
 .link {
     color: $secondary-text-color;

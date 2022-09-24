@@ -1,24 +1,100 @@
-
 .header {
-    position: relative;
     margin-left: auto;
     margin-right: auto;
 
     border-bottom: 1px solid #ECECEC;
 
+    &__content {
+        @media screen and (max-width: 767px){
+            position: relative;
+        }
+    }
+    
     &__logo {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        @media screen and (max-width: $mobile){
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        @media screen and (min-width: $mobile) and (max-width: $tablet){
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
+        @media screen and (min-width: $tablet) {
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
+    }
+    &__logo-color {
+        color: $logo-text-color;
+    }
+    &__contacts-list {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px
+    }
+    &__contacts-link{
+        @extend %style-header-links;
+        font-size: 24px;
+        line-height: 1.17;
+
+        color: $primary-text-color;
+    
+        &:hover,
+        &:focus {
+            color: $accent-color;
+            font-size: 34px;
+            line-height: 1.18;
+        }
+    }
+    &__social-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px
+    }
+    &__social-list .item:not(:last-child) {
+        padding-right: 10px;
+
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    &__social-link {
+        @extend %style-header-links;
+        font-size: 18px;
+        line-height: 1.23;
+        color: $primary-text-color;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+    &__contacts-icon {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
 }
 .nav {
     display: flex;
     align-items: center;
-}
-.header__logo-color {
-    color: $logo-text-color;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__link{
+        @extend %style-header-links;
+        font-size: 40px;
+        line-height: 1.18;
+    
+        &:hover, 
+        &:focus{
+            color: $accent-color;
+        }
+    }
 }
 .button-menu {
+    z-index: 1;
     display: flex;
     margin-left: auto;
     padding: 10px 0;
@@ -36,6 +112,10 @@
     &:focus .icon {
         color: $accent-color;
     }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 .button-menu__icon-close {
     display: none;
@@ -50,68 +130,23 @@
     }
 }
 .mobile-menu {
-    display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
+    display: none;
     width: 100%;
-    padding: 20px;
+    min-height: 796px;
+    padding: 48px 40px;
 
-    text-align: center;
-    font-size: 20px;
-    background-color: blanchedalmond;
+    background-color: $primary-white-color;
 
     &--is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+        position: static;
     }
 }
-// .header__contacts-icon{
-//     margin-right: 10px;
-// } 
-// .header__contacts-link{
-//     @extend %style-header-links;
-//     color: $primary-text-color;
-
-//     &:hover,
-//     &:focus {
-//         color: $accent-color;
-//     }
-// }
-// .header__contacts-list {
-//     display: flex;
-//     margin-left: auto;
-//     gap: 30px;
-// }
-// .nav {
-//     display: flex;
-// }
-// .nav__list {
-//     display: flex;
-//     margin-left: 93px;
-//     gap: 50px;
-// }
-// .nav__link{
-//     @extend %style-header-links;
-
-//     &:hover, 
-//     &:focus{
-//         color: $accent-color;
-//     }
-// }
-// .nav__link--current{
-//     position: relative;
-//     color: $accent-color;
-
-//     &::after {
-//         content: "";
-//         position: absolute;
-//         bottom: -2px;
-//         left: 0;
-    
-//         width: 100%;
-//         height: 4px;
-    
-//         background-color: $accent-color;
-//         border-radius: 4px;
-//     }
-// }

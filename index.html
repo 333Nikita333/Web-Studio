@@ -25,7 +25,7 @@
   <body class="body-site">
     <header class="header">
       <!--Навігація сайту-->
-      <div class="container">
+      <div class="container header__content">
         <nav class="nav">
           <a class="link logo header__logo" href="./index.html" rel="noopener nofollow noreferrer"
             >Web<span class="header__logo-color">Studio</span></a
@@ -45,7 +45,62 @@
               <use class="button-menu__icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
             </svg>
           </button>
-          <div class="mobile-menu" id="mobile-menu" data-menu>Контент</div>
+          <div class="mobile-menu" id="mobile-menu" data-menu>
+            <ul class="list nav__list">
+              <li class="item nav__item">
+                <a
+                  class="link nav__link nav__link--current"
+                  href="./index.html"
+                  rel="noopener nofollow noreferrer"
+                  >Студія</a
+                >
+              </li>
+              <li class="item nav__item">
+                <a class="link nav__link" href="./portfolio.html" rel="noopener nofollow noreferrer"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="item nav__item">
+                <a class="link nav__link" href="./index.html" rel="noopener nofollow noreferrer"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+            <ul class="list header__contacts-list">
+              <li class="item header__contacts-item">
+                <a
+                  class="link header__contacts-link"
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                >
+                  <svg class="icon header__contacts-icon" width="16" height="12px">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item header__contacts-item">
+                <a
+                  class="link header__contacts-link"
+                  href="tel:+380961111111"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                >
+                  <svg class="icon header__contacts-icon" width="12px" height="18px">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="list header__social-list">
+              <li class="item"><a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener">Instagram</a></li>
+              <li class="item"><a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener">Twitter</a></li>
+              <li class="item"><a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener">Facebook</a></li>
+              <li class="item"><a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -161,11 +216,7 @@
           <h2 class="employees__title">Наша команда</h2>
           <ul class="list employees__list">
             <li class="item person-card">
-              <img
-                class="img"
-                src="./images/person-one.jpg"
-                alt="Ihor-Demyanenko"
-              />
+              <img class="img" src="./images/person-one.jpg" alt="Ihor-Demyanenko" />
               <div class="person-card__description">
                 <h3 class="person-card__name">Ігор Дем'яненко</h3>
                 <p class="person-card__post" lang="en">Product Designer</p>
@@ -222,11 +273,7 @@
               </div>
             </li>
             <li class="item person-card">
-              <img
-                class="img"
-                src="./images/person-two.jpg"
-                alt="Olga-Repina"
-              />
+              <img class="img" src="./images/person-two.jpg" alt="Olga-Repina" />
               <div class="person-card__description">
                 <h3 class="person-card__name">Ольга Рєпіна</h3>
                 <p class="person-card__post" lang="en">Frontend Developer</p>
@@ -283,11 +330,7 @@
               </div>
             </li>
             <li class="item person-card">
-              <img
-                class="img"
-                src="./images/person-three.jpg"
-                alt="Mykola-Tarasov"
-              />
+              <img class="img" src="./images/person-three.jpg" alt="Mykola-Tarasov" />
               <div class="person-card__description">
                 <h3 class="person-card__name">Микола Тарасов</h3>
                 <p class="person-card__post" lang="en">Marketing</p>
@@ -344,11 +387,7 @@
               </div>
             </li>
             <li class="item person-card">
-              <img
-                class="img"
-                src="./images/person-four.jpg"
-                alt="Mykhailo-Yermakov"
-              />
+              <img class="img" src="./images/person-four.jpg" alt="Mykhailo-Yermakov" />
               <div class="person-card__description">
                 <h3 class="person-card__name">Михайло Єрмаков</h3>
                 <p class="person-card__post" lang="en">UI Designer</p>
@@ -586,7 +625,6 @@
         </form>
       </div>
     </footer>
-    
 
     <!-- Модальне вікно -->
     <div class="backdrop backdrop--is-hidden" data-modal>

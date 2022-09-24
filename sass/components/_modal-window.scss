@@ -11,6 +11,8 @@
 
     background-color: rgba(0, 0, 0, 0.2);
 
+    padding: 30px;
+
     &--is-hidden {
         opacity: 0;
         pointer-events: none;
@@ -18,9 +20,6 @@
     }
 }
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     overflow: hidden;
     transform: translate(-50%, -50%) scale(1);
     transition: transform $time-duration $timing-function;
@@ -111,6 +110,7 @@
     }
     &-checkbox {
         margin: 0;
+        align-items: center;
 
         font-size: 12px;
         line-height: 1.17;
@@ -187,7 +187,6 @@
 
     &--mark {
         position: absolute;
-        top: 3.6px;
         opacity: 0;
     
         background-color: $accent-color;
