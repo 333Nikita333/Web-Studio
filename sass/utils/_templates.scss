@@ -1,5 +1,5 @@
 %style-header-links {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         font-size: 12px;
     }
     font-weight: 500;
@@ -16,12 +16,19 @@
 }
 %style-primary-title {
     margin-top: 0;
+    font-weight: 700;
+    text-align: center;
 
     color: $secondary-text-color;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.18;
-    text-align: center;
+    
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+    @media screen and (min-width: $desctop) {
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 %style-social-link {
     display: flex;

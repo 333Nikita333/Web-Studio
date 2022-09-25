@@ -8,9 +8,17 @@
 
     &__content {
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
     }
     &__contacts--withlogo {
-        margin-bottom: 60px;
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 60px;
+        }
     }
     &__logo {
         display: inline-block;
@@ -86,6 +94,12 @@
     }
 }
 .form-subscribe__field {
+    @media screen and (min-width: 768px) {
+        min-width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        min-width: 358px;
+    }
     margin-bottom: 20px;
     padding: 15px 16px;
 

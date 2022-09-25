@@ -1,8 +1,9 @@
 .services {
-    @media screen and (max-width: 768px) {
+    padding-top: 0;
+
+    @media screen and (max-width: 1199px) {
         display: none;
     }
-    padding-top: 0;
     
     &__title {
         @extend %style-primary-title;
