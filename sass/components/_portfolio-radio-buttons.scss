@@ -1,7 +1,8 @@
 .portfolio__list-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    row-gap: 15px;
+    column-gap: 8px;
     margin-bottom: 30px;
 }
 .portfolio__button{

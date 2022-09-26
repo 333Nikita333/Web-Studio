@@ -17,6 +17,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .container {
   margin-right: auto;
@@ -26,17 +32,17 @@
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -59,8 +65,18 @@
   color: #2196F3;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
+}
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .button {
@@ -229,9 +245,11 @@
 @media screen and (max-width: 767px) {
   .header__contacts-link {
     font-size: 24px;
+    -webkit-transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .header__contacts-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -240,6 +258,11 @@
         -ms-flex-align: center;
             align-items: center;
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts-link {
+    font-size: 14px;
   }
 }
 .header__contacts-link:hover, .header__contacts-link:focus {
@@ -355,7 +378,7 @@
   .nav__link--current::after {
     content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: -3px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -365,7 +388,7 @@
 }
 
 .button-menu {
-  z-index: 1;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,6 +431,7 @@
   .mobile-menu {
     display: none;
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -451,7 +475,10 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 8px;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
   margin-bottom: 30px;
 }
 
@@ -563,18 +590,31 @@
   padding-bottom: 60px;
   background-color: #2F303A;
 }
-.footer__content {
-  text-align: center;
-}
 @media screen and (min-width: 768px) {
   .footer__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__content {
+    text-align: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__content {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -620,8 +660,10 @@
   color: #2196F3;
 }
 
-.site-socials {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .site-socials {
+    margin-bottom: 60px;
+  }
 }
 .site-socials__list {
   display: -webkit-box;
@@ -641,6 +683,16 @@
   background-color: #2196F3;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
 .form-subscribe__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,7 +708,6 @@
 }
 
 .form-subscribe__field {
-  margin-bottom: 20px;
   padding: 15px 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -679,6 +730,11 @@
     min-width: 358px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .form-subscribe__field {
+    margin-bottom: 20px;
+  }
+}
 .form-subscribe__field::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -695,6 +751,6 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button-subscribe__icon {
+.form-subscribe__icon {
   margin-left: 10px;
 }/*# sourceMappingURL=portfolio.css.map */

@@ -2,7 +2,6 @@
     &__title {
         @extend %style-primary-title;
 
-        margin-bottom: 30px;
     }
     &__list {
         display: flex;
@@ -11,7 +10,15 @@
 
     }
     &__item {
-        width: calc((100% - 60px)/ 3);
+        @media screen and (max-width: 767px) {
+            width: calc((100% - 30px)/ 2);
+        }
+        @media screen and (min-width: $tablet) {
+            width: calc((100% - 60px)/ 3);
+        }
+        @media screen and (min-width: $desctop) {
+            width: calc((100% - 150px)/ 6);
+        }
     }
 }
 .clients__link {

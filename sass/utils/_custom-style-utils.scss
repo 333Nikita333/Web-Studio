@@ -14,6 +14,11 @@
     padding-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .container{
     margin-right: auto;
@@ -22,13 +27,13 @@
     padding: 0 15px;
 
     @media screen and (min-width: $mobile) {
-        width: 480px;
+        max-width: 480px;
     }
     @media screen and (min-width: $tablet) {
-        width: 768px;
+        max-width: 768px;
     }
     @media screen and (min-width: $desctop) {
-        width: 1200px;
+        max-width: 1200px;
     }
 }
 .link {
@@ -48,8 +53,15 @@
     color: $accent-color;
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+    @media screen and (min-width: $desctop) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 .button {
     display: inline-flex;

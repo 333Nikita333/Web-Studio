@@ -4,9 +4,6 @@
     &__title {
        @extend %style-primary-title;
 
-       @media screen and (max-width: 1199px) {
-        margin-bottom: 30px;
-       }
     }
     &__list {
         @media screen and (min-width: $tablet) {
@@ -17,8 +14,16 @@
     }
 }
 .person-card{
+    @media screen and (max-width: 767px) {
+        & + & {
+            margin-top: 30px;
+        }
+    }
     @media screen and (min-width: $tablet) {
         width: calc((100% - 30px)/2);
+    }
+    @media screen and (min-width: $desctop) {
+        width: calc((100% - 90px)/4);
     }
     text-align: center;
 
