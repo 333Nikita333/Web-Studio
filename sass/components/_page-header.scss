@@ -5,6 +5,9 @@
     border-bottom: 1px solid #ECECEC;
 
     &__content {
+        display: flex;
+        align-items: center;
+        
         @media screen and (max-width: 767px){
             position: relative;
         }
@@ -208,6 +211,7 @@
 }
 .mobile-menu {
     background-color: $primary-white-color;
+    width: 100%;
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -222,11 +226,9 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         margin-left: 88px;
-        min-width: 519px;
     }
     @media screen and (min-width: $desctop) {
         margin-left: 93px;
-        min-width: 947px;
     }
     &--is-open {
         @media screen and (max-width: 767px) {
