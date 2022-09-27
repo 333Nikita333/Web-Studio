@@ -26,26 +26,23 @@
     <header class="header">
       <!--Навігація сайту-->
       <div class="container header__content">
-        <nav class="nav">
-          <a class="link logo header__logo" href="./index.html" rel="noopener nofollow noreferrer"
-            >Web<span class="header__logo-color">Studio</span></a
-          >
-          <button
-            class="button-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            data-menu-button
-          >
-            <svg class="icon" width="40px" height="40px" aria-label="Перемикач мобільного меню">
-              <use
-                class="button-menu__icon-close"
-                href="./images/icons.svg#icon-mobile-close"
-              ></use>
-              <use class="button-menu__icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
-            </svg>
-          </button>
-          <div class="mobile-menu" id="mobile-menu" data-menu>
+        <a class="link logo header__logo" href="./index.html" rel="noopener nofollow noreferrer"
+          >Web<span class="header__logo-color">Studio</span></a
+        >
+        <button
+          class="button-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg class="icon" width="40px" height="40px" aria-label="Перемикач мобільного меню">
+            <use class="button-menu__icon-close" href="./images/icons.svg#icon-mobile-close"></use>
+            <use class="button-menu__icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+          <nav class="nav">
             <ul class="list nav__list">
               <li class="item nav__item">
                 <a
@@ -66,42 +63,58 @@
                 >
               </li>
             </ul>
-            <ul class="list header__contacts-list">
-              <li class="item header__contacts-item">
-                <a
-                  class="link header__contacts-link"
-                  href="mailto:info@devstudio.com"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                >
-                  <svg class="icon header__contacts-icon" width="16" height="12px">
-                    <use href="./images/icons.svg#icon-mail"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="item header__contacts-item">
-                <a
-                  class="link header__contacts-link"
-                  href="tel:+380961111111"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                >
-                  <svg class="icon header__contacts-icon" width="12px" height="18px">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-            <ul class="list header__social-list">
-              <li class="item"><a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener">Instagram</a></li>
-              <li class="item"><a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener">Twitter</a></li>
-              <li class="item"><a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener">Facebook</a></li>
-              <li class="item"><a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
-            </ul>
-          </div>
-        </nav>
+          </nav>
+          <ul class="list header__contacts-list">
+            <li class="item header__contacts-item">
+              <a
+                class="link header__contacts-link"
+                href="mailto:info@devstudio.com"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
+                <svg class="icon header__contacts-icon" width="16" height="12px">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item header__contacts-item">
+              <a
+                class="link header__contacts-link"
+                href="tel:+380961111111"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
+                <svg class="icon header__contacts-icon" width="12px" height="18px">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="list header__social-list">
+            <li class="item">
+              <a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener"
+                >Instagram</a
+              >
+            </li>
+            <li class="item">
+              <a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener"
+                >Twitter</a
+              >
+            </li>
+            <li class="item">
+              <a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener"
+                >Facebook</a
+              >
+            </li>
+            <li class="item">
+              <a class="link header__social-link" href="" target="_blank" rel="noreferrer noopener"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -234,7 +247,7 @@
                   </div>
                 </div>
                 <div class="project-link__exposition">
-                  <h2 class="project-link__titlee" lang="en">Inspiration has no Borders</h2>
+                  <h2 class="project-link__title" lang="en">Inspiration has no Borders</h2>
                   <p class="project-link__text">Веб-сайт</p>
                 </div>
               </a>
