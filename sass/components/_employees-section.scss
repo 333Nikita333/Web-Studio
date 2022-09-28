@@ -20,10 +20,10 @@
         }
     }
     @media screen and (min-width: $tablet) {
-        width: calc((100% - 30px)/2);
+        flex-basis: calc((100% - 30px)/2);
     }
     @media screen and (min-width: $desctop) {
-        width: calc((100% - 90px)/4);
+        flex-basis: calc((100% - 90px)/4);
     }
     text-align: center;
 

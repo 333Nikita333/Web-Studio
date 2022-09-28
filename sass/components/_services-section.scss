@@ -16,7 +16,7 @@
     &__item {
         position: relative;
     
-        width: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
     }
     &__overlay {
         position: absolute;

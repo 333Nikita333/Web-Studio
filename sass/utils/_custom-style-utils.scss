@@ -8,6 +8,8 @@
 }
 .img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .section {
     padding-top: 60px;
@@ -26,8 +28,8 @@
     margin-left: auto;
     padding: 0 15px;
 
-    @media screen and (min-width: $mobile) {
-        width: 480px;
+    @media screen and (max-width: 767px) {
+        max-width: 480px;
     }
     @media screen and (min-width: $tablet) {
         width: 768px;
