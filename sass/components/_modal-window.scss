@@ -28,6 +28,7 @@
     }
 }
 .modal {
+    z-index: 5;
     transform: scale(1);
     transition: transform $time-duration $timing-function;
 
@@ -41,7 +42,7 @@
 
 
     @media screen and (max-width: 1199px) {
-        max-width: 450px;
+        width: 450px;
     }
     @media screen and (min-width: $tablet) {
         position: absolute;
