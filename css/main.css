@@ -1076,7 +1076,7 @@
 }
 
 .modal {
-  max-width: 450px;
+  width: 96%;
   z-index: 5;
   position: absolute;
   top: 50%;
