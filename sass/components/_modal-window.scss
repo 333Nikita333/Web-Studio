@@ -29,6 +29,13 @@
 }
 .modal {
     z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $time-duration $timing-function;
+    
     padding: 40px;
     max-width: 450px;
 
@@ -37,13 +44,7 @@
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    overflow: hidden;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform $time-duration $timing-function;
-    
+
     .backdrop--is-hidden & {
         transform: translate(-50%, -50%) scale(1.5);
     }
