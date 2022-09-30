@@ -194,16 +194,18 @@
     &:focus .icon {
         color: $accent-color;
     }
+    & .icon-close {
+        display: none;
+    }
 
     @media screen and (min-width: $tablet) {
         display: none;
     }
 }
-.button-menu__icon-close {
-    display: none;
-
-    .button-menu--is-open & {
+.button-menu--is-open {
+    & .icon-close {
         display: block;
+        position: fixed;
     }
 }
 .button-menu__icon-menu{
