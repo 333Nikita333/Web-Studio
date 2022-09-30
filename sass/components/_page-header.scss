@@ -38,6 +38,7 @@
             display: flex;
             gap: 32px;
             flex-direction: column-reverse;
+            margin-bottom: 64px;
         }
         @media screen and (min-width: $tablet) {
             display: flex;
@@ -123,6 +124,7 @@
 .nav {
     display: flex;
     align-items: center;
+    margin-bottom: auto;
 
     &__list {
         display: flex;
@@ -202,6 +204,12 @@
 
     .button-menu--is-open & {
         display: block;
+
+        @media screen and (max-width: 767px) {
+            position: fixed;
+            top: 0;
+            right: 105px;
+        }
     }
 }
 .button-menu__icon-menu{
@@ -215,10 +223,11 @@
 
     @media screen and (max-width: 767px) {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
         min-height: 796px;
         padding: 48px 40px;
     }
@@ -234,7 +243,6 @@
             z-index: 5;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
         }
     }
 }
