@@ -204,12 +204,6 @@
 
     .button-menu--is-open & {
         display: block;
-
-        @media screen and (max-width: 767px) {
-            position: fixed;
-            top: 0;
-            right: 105px;
-        }
     }
 }
 .button-menu__icon-menu{
