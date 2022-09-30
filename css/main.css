@@ -495,13 +495,6 @@
 .button-menu--is-open .button-menu__icon-close {
   display: block;
 }
-@media screen and (max-width: 767px) {
-  .button-menu--is-open .button-menu__icon-close {
-    position: fixed;
-    top: 0;
-    right: 105px;
-  }
-}
 
 .button-menu--is-open .button-menu__icon-menu {
   display: none;
