@@ -9,7 +9,7 @@
 
     transition: color $time-duration $timing-function;
 }
-%style-name-features_services {
+%style-name-features__services {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -76,9 +76,9 @@
 
     transition: border $time-duration $timing-function;
 }
-%style-modal-form__icon {
+@mixin style-modal-form__ico ($top: 29px) {
     position: absolute;
-    top: 29px;
+    top: $top;
     left: 12px;
 
     color: $secondary-text-color;

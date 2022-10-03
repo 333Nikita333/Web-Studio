@@ -28,7 +28,6 @@
     }
 }
 .modal {
-    width: 96%;
     z-index: 5;
     position: absolute;
     top: 50%;
@@ -49,7 +48,10 @@
         transform: translate(-50%, -50%) scale(1.5);
     }
 
-    @media screen and (min-width: 481px) {
+    @media screen and (max-width: $mobile) {
+        width: 96%;
+    }
+    @media screen and (min-width: 481px) and (max-width: 1199px) {
         width: 450px;
     }
 }
@@ -209,7 +211,7 @@
     }
 }
 .modal-form__icon {
-    @extend %style-modal-form__icon;
+    @include style-modal-form__icon;
 
     .modal-form__label:focus-within > & {
         color: $accent-color;
