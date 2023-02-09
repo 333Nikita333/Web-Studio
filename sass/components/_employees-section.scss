@@ -1,80 +1,78 @@
 .employees {
-    background-color: $secondary-background-color;
+  background-color: $secondary-background-color;
 
-    &__title {
-       @extend %style-primary-title;
-
-    }
-    &__list {
-        @media screen and (min-width: $tablet) {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-    }
-}
-.person-card{
-    @media screen and (max-width: 767px) {
-        & + & {
-            margin-top: 30px;
-        }
-    }
+  &__title {
+    @extend %style-primary-title;
+  }
+  &__list {
     @media screen and (min-width: $tablet) {
-        flex-basis: calc((100% - 30px)/2);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+}
+.person-card {
+  @media screen and (max-width: 767px) {
+    & + & {
+      margin-top: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: $desctop) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  text-align: center;
+
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &__description {
+    padding-top: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+    @media screen and (max-width: 1199px) {
+      padding-bottom: 24px;
     }
     @media screen and (min-width: $desctop) {
-        flex-basis: calc((100% - 90px)/4);
+      padding-bottom: 30px;
     }
+  }
+
+  &__name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
     text-align: center;
+    color: $secondary-text-color;
+  }
+  &__post {
+    margin-top: 0;
+    margin-bottom: 16px;
 
-    background-color: $primary-white-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-                0px 1px 1px rgba(0, 0, 0, 0.14), 
-                0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-
-    &__description {
-        padding-top: 30px;
-        padding-right: 32px;
-        padding-left: 32px;
-        @media screen and (max-width: 1199px) {
-            padding-bottom: 24px;
-        }
-        @media screen and (min-width: $desctop) {
-            padding-bottom: 30px;
-        }
-    }
-
-    &__name {
-        margin-top: 0;
-        margin-bottom: 10px;
-        
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        color: $secondary-text-color;
-    }
-    &__post {
-        margin-top: 0;
-        margin-bottom: 16px;
-    
-        font-size: 16px;
-        line-height: 1.19;
-    }
-    &__socials {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 .person-card__socail-link {
-    color: $icons-other-color;
-    @extend %style-social-link;
+  color: $icons-other-color;
+  @extend %style-social-link;
 
-    &:hover,
-    &:focus {
+  &:hover,
+  &:focus {
     color: $primary-white-color;
     background-color: $accent-color;
-}
+  }
 }

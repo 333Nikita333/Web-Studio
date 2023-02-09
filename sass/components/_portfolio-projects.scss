@@ -1,88 +1,86 @@
 .projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 
-    &__item {
-        
-        @media screen and (max-width: 767px) {
-            flex-basis: 100%;
-        }
-        @media screen and (min-width: $tablet) {
-            display: flex;
-            flex-basis: calc((100% - 30px) / 2);
-        }
-        @media screen and (min-width: $desctop) {
-            flex-basis: calc((100% - 60px) / 3);
-        }
+  &__item {
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
     }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: $desctop) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
 }
 .project-link {
-    display: flex;
-    flex-direction: column;
-    transition: box-shadow $time-duration $timing-function;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow $time-duration $timing-function;
 
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-                    0px 4px 4px rgba(0, 0, 0, 0.06), 
-                    1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 .project-link__label {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
-    & .img {
-        width: 100%;
-    }
-}    
-.project-link__overlay{
-    position: absolute;
-    display: inline-flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 24px;
-    
-    background-color: $text-label-portfolio-background-color;
-    
-    transition: transform $time-duration $timing-function;
-    
-    .project-link:hover & {
-        transform: translateY(-100%);
-    }
+  & .img {
+    width: 100%;
+  }
+}
+.project-link__overlay {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+
+  background-color: $text-label-portfolio-background-color;
+
+  transition: transform $time-duration $timing-function;
+
+  .project-link:hover & {
+    transform: translateY(-100%);
+  }
 }
 .project-link__description {
-    margin: 0;
-    
-    font-size: 18px;
-    line-height: 1.56;
-    
-    color: $primary-white-color;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: $primary-white-color;
 }
 .project-link__exposition {
-    flex-grow: 1;
-    padding: 20px 24px;
-    
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-}
-.project-link__title{  
-    margin-top: 0;
-    margin-bottom: 4px;
+  flex-grow: 1;
+  padding: 20px 24px;
 
-    color: $secondary-text-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
-.project-link__text{
-    margin-top: 0;
-    margin-bottom: 0;
+.project-link__title {
+  margin-top: 0;
+  margin-bottom: 4px;
 
-    color: $primary-text-color;
-    font-size: 16px;
-    line-height: 1.88;
+  color: $secondary-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-link__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.88;
 }

@@ -1,91 +1,67 @@
 .main {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    @media screen and (max-width: 767px) {
-        max-width: $mobile;
-        background-image: linear-gradient(
-        to right, 
-        rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)),
-        url(../images/main-mobile-img/main-mobile-480@1x.jpg);
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right, 
-            rgba(47, 48, 58, 0.4), 
-            rgba(47, 48, 58, 0.4)),
-            url(../images/main-mobile-img/main-mobile-480@2x.jpg);
-    }
-    }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    @media screen and (min-width: $tablet) {
-        max-width: $tablet;
-        background-image: linear-gradient(
-        to right, 
-        rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)),
-        url(../images/main-tablet-img/main-tablet-768@1x.jpg);
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right, 
-            rgba(47, 48, 58, 0.4), 
-            rgba(47, 48, 58, 0.4)),
-            url(../images/main-tablet-img/main-tablet-768@2x.jpg);
+  @media screen and (max-width: 767px) {
+    max-width: $mobile;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-mobile-img/main-mobile-480@1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/main-mobile-img/main-mobile-480@2x.jpg);
     }
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-tablet-img/main-tablet-768@1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/main-tablet-img/main-tablet-768@2x.jpg);
     }
+  }
+
+  @media screen and (min-width: $desctop) {
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-desctop-img/main-desctop-1600@1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/main-desctop-img/main-desctop-1600@2x.jpg);
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: $desctop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  &__content {
+    text-align: center;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    color: $primary-white-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
     @media screen and (min-width: $desctop) {
-        max-width: 1600px;
-        background-image: linear-gradient(
-        to right, 
-        rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)),
-        url(../images/main-desctop-img/main-desctop-1600@1x.jpg);
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right, 
-            rgba(47, 48, 58, 0.4), 
-            rgba(47, 48, 58, 0.4)),
-            url(../images/main-desctop-img/main-desctop-1600@2x.jpg);
+      font-size: 44px;
+      line-height: 1.36;
     }
-    }
-
-    @media screen and (max-width: 1199px) {
-        padding-top: 118px;
-        padding-bottom: 118px;
-    }
-    @media screen and (min-width: $desctop) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-
-    &__content {
-        text-align: center;
-    }
-    &__title {
-        margin-top: 0;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        
-        color: $primary-white-color;
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 1.62;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-
-        @media screen and (min-width: $desctop) {
-            font-size: 44px;
-            line-height: 1.36;
-        }
-    }
+  }
 }

@@ -1,87 +1,87 @@
 %style-header-links {
-    @media screen and (min-width: $tablet) {
-        font-size: 12px;
-    }
-    font-weight: 500;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    list-style: none;
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+  }
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  list-style: none;
 
-    transition: color $time-duration $timing-function;
+  transition: color $time-duration $timing-function;
 }
 %style-name-features__services {
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 %style-primary-title {
-    margin-top: 0;
-    font-weight: 700;
-    text-align: center;
+  margin-top: 0;
+  font-weight: 700;
+  text-align: center;
 
-    color: $secondary-text-color;
-    
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 30px;
-        font-size: 28px;
-        line-height: 1.18;
-    }
-    @media screen and (min-width: $desctop) {
-        font-size: 36px;
-        line-height: 1.17;
-        margin-bottom: 50px;
-    }
+  color: $secondary-text-color;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 %style-social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    transition: color $time-duration $timing-function, 
-                background-color $time-duration $timing-function;
+  transition: color $time-duration $timing-function,
+    background-color $time-duration $timing-function;
 }
 %style-footer-title {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 20px;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
 
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: $primary-white-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
 }
 %style-modal-form__text {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 %style-modal-form__label {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
 }
 %style-modal-form__field {
-    width: 100%;
-    min-height: 40px;
+  width: 100%;
+  min-height: 40px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-    transition: border $time-duration $timing-function;
+  transition: border $time-duration $timing-function;
 }
-@mixin style-modal-form__ico ($top: 29px) {
-    position: absolute;
-    top: $top;
-    left: 12px;
+%style-modal-form__icon {
+  position: absolute;
+  top: 29px;
+  left: 12px;
 
-    color: $secondary-text-color;
+  color: $secondary-text-color;
 
-    transition: color $time-duration $timing-function;
+  transition: color $time-duration $timing-function;
 }

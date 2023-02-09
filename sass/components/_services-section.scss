@@ -1,41 +1,41 @@
 .services {
-    padding-top: 0;
+  padding-top: 0;
 
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
-    
-    &__title {
-        @extend %style-primary-title;
-    }
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    &__item {
-        position: relative;
-    
-        flex-basis: calc((100% - 60px) / 3);
-    }
-    &__overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 370px;
-        min-height: 70px;
-    
-        background-color: $label-background-color;
-    }
-    &__name {
-        @extend %style-name-features_services;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
-        margin: 0;
-    
-        color: $primary-white-color;
-    }
+  &__title {
+    @extend %style-primary-title;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    position: relative;
+
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 370px;
+    min-height: 70px;
+
+    background-color: $label-background-color;
+  }
+  &__name {
+    @extend %style-name-features__services;
+
+    margin: 0;
+
+    color: $primary-white-color;
+  }
 }
