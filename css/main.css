@@ -1085,6 +1085,12 @@
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: none;
+    width: 528px;
+  }
+}
 
 .modal__button-close {
   position: absolute;
@@ -1193,7 +1199,6 @@
 @media screen and (min-width: 1200px) {
   .modal-form__text-checkbox {
     font-size: 14px;
-    line-height: 1.71;
   }
 }
 .modal-form__text-checkbox::before {

@@ -28,6 +28,7 @@
   
     if (e.currentTarget === e.target) {
       refs.modal.classList.toggle('backdrop--is-hidden');
+      refs.body.classList.toggle('menu--is-open');
     }
   }
   function handleEscDown(e) {

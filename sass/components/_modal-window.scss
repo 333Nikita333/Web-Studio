@@ -12,7 +12,7 @@
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-  
+
   transition: opacity $time-duration $timing-function, visibility $time-duration $timing-function;
 
   &--is-hidden {
@@ -47,6 +47,10 @@
   @media screen and (min-width: 481px) and (max-width: 1199px) {
     width: 450px;
   }
+  @media screen and (min-width: $desctop) {
+    max-width: none;
+    width: 528px;
+  }
 }
 
 .modal__button-close {
@@ -68,7 +72,7 @@
   background-color: inherit;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  
+
   transition: color $time-duration $timing-function;
 
   &:hover,
@@ -142,7 +146,6 @@
     }
     @media screen and (min-width: $desctop) {
       font-size: 14px;
-      line-height: 1.71;
     }
   }
   &-checkbox::before {
