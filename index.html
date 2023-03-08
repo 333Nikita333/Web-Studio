@@ -34,7 +34,7 @@
           type="button"
           aria-expanded="false"
           aria-controls="mobile-menu"
-          data-menu-button
+          data-menu-button-open
         >
           <svg
             class="icon icon-menu"
@@ -44,6 +44,15 @@
           >
             <use class="button-menu__icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
+        </button>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+          <button
+          class="button-menu"
+          type="button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          data-menu-button-close
+        >
           <svg
             class="icon icon-close"
             width="40px"
@@ -53,7 +62,6 @@
             <use class="button-menu__icon-close" href="./images/icons.svg#icon-mobile-close"></use>
           </svg>
         </button>
-        <div class="mobile-menu" id="mobile-menu" data-menu>
           <nav class="nav">
             <ul class="list nav__list">
               <li class="item nav__item">
