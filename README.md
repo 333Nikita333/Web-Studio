@@ -25,3 +25,11 @@ You can clone this repository to your local machine and open the HTML files in y
 ## Getting Started
 
 To get started, follow these steps:
+
+1. Clone the repository to your local machine:
+
+   ```shell
+   git clone https://github.com/your-username/web-studio.git
+   ```
+
+2. Open the HTML files in your preferred web browser to view the application.
